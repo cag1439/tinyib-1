@@ -1,3 +1,9 @@
+
+A fork of latest tinyib. Strftime is depricated with php 8.1.x and up, you have to use date().  Also some slight mods and css overhaul. Optimized for php 8.1.x 
+so do not bother using any lower version of php. 
+
+
+
 # TinyIB - Lightweight and efficient [imageboard](https://en.wikipedia.org/wiki/Imageboard)
 [![Translate](https://hosted.weblate.org/widgets/tinyib/-/tinyib/svg-badge.svg)](https://hosted.weblate.org/projects/tinyib/tinyib/)
 [![Donate](https://img.shields.io/liberapay/receives/rocketnine.space.svg?logo=liberapay)](https://liberapay.com/rocketnine.space)
