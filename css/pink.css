@@ -1,0 +1,214 @@
+html, body {
+	background: #FFEEEE;
+	color: #222222;
+	font-family: arial,helvetica,sans-serif;
+	font-size: 10pt;
+}
+
+a {
+	color: #771177;
+}
+
+hr {
+	background: #FF8888;
+}
+
+.reflink a:hover {
+	font-weight: bold;
+}
+
+.logo {
+	clear: both;
+	text-align: center;
+	font-family: tahoma;
+	font-size: 2em;
+	font-weight: bold;
+	color: #FF8888;
+	width: 100%;
+}
+
+.replymode {
+	background: #E04000;
+	text-align: center;
+	padding: 2px;
+	color: #FFFFFF;
+	width: 100%;
+}
+
+.manageinfo {
+	background: #00B930;
+	text-align: center;
+	padding: 2px;
+	color: #FFFFFF;
+	width: 100%;
+}
+
+.catalogmode {
+	background: #0040E0;
+	text-align: center;
+	padding: 2px;
+	color: #FFFFFF;
+	width: 100%;
+}
+
+.rules {
+	width: 468px;
+	font-size: 10px;
+	font-family: sans-serif;
+}
+
+.rules li {
+	margin-left: 1em;
+}
+
+.postblock {
+	background: #FF8888;
+        color: #FFFFFF;
+	font-weight: bold;
+}
+
+.footer {
+	font-size: 12px;
+}
+
+.passvalid {
+	background: #EEAA88;
+	text-align: center;
+	width: 100%;
+	color: #ffffff;
+}
+
+.dellist {
+	font-weight: bold;
+	text-align: center;
+}
+
+.delbuttons {
+	text-align: center;
+	padding-bottom: 4px;
+
+}
+
+.managehead {
+	background: #AAAA66;
+	color: #400000;
+	padding: 0;
+}
+
+.postlists {
+	background: #FFFFFF;
+	width: 100%;
+	padding: 0;
+	color: #800000;
+}
+
+.row1 {
+	background: #EEEECC;
+	color: #800000;
+}
+
+.row2 {
+	background: #DDDDAA;
+	color: #800000;
+}
+
+.unkfunc {
+	background: inherit;
+	color: #779922;
+}
+
+.filesize {
+        font-size: 9pt;
+	text-decoration: none;
+}
+
+.filetitle {
+	background: inherit;
+	color: #222222;
+	font-weight: bold;
+}
+
+.postername {
+	color: #771177;
+	font-weight: bold;
+}
+
+.postertrip {
+	color: #228854;
+}
+
+.oldpost {
+	color: #CC1105;
+	font-weight: 800;
+}
+
+.omittedposts {
+	color: #707070;
+}
+
+.reply {
+	background: #FFC4C4;
+	box-shadow: 1px 1px rgb(255 136 136);
+}
+
+.replyhl {
+	background: #F0C0B0;
+	color: #800000;
+}
+
+.replytitle {
+	font-size: 1.2em;
+	color: #CC1105;
+	font-weight: 800;
+}
+
+.hoverpost {
+	background: #FFEEEE;
+}
+
+.hoverpost.reply {
+	background: #FFC4C4;
+}
+
+.commentpostername {
+	color: #117744;
+	font-weight: 800;
+}
+
+.thumbnailmsg {
+	font-size: small;
+	color: #800000;
+}
+
+.abbrev {
+	color: #707070;
+}
+
+.highlight {
+	background: #F0E0D6;
+	
+	color: #800000;
+	border: 2px dashed #EEAA88;
+}
+
+
+input, textarea {
+  background-color: #FFEEEE;
+  border: 1px solid #FF8888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
