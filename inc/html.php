@@ -70,7 +70,7 @@ function pageFooter() {
 
 	return <<<EOF
 		<div class="footer">
-			- <a href="http://www.2chan.net" target="_top">futaba</a> + <a href="http://www.1chan.net" target="_top">futallaby</a> + <a href="https://code.rocketnine.space/tslocum/tinyib" target="_top">tinyib</a> -
+			- <a href="./" target="_top">Home</a> + <a href="./" target="_top">home</a> + <a href="index.html" target="_top">top</a> -
 		</div>
 	</body>
 </html>
@@ -269,10 +269,10 @@ EOF;
 
 	$embeds_enabled = (!empty($tinyib_embeds) || TINYIB_UPLOADVIAURL) && ($staff_post || !in_array('embed', $hide_fields));
 	if ($embeds_enabled) {
-		$txt_embed = __('Embed');
+		$txt_embed = __('YT/url');
 		$txt_embed_help = '';
 		if ($embeds_enabled) {
-			$txt_embed_help = __('(paste a YouTube URL)');
+			$txt_embed_help = __('&nbsp;');
 		}
 		$embed_input_html = <<<EOF
 					<tr>
@@ -308,11 +308,17 @@ EOF;
 	}
 
 	$output = <<<EOF
+		<div class="adelia">
+		<div style="  font-size: 1.2em;
+  text-align: center;">[<span onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Close'; this.value = '-'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Open'; }" type="button">Open</span>]<br>
+</div>
+<div class="alt2">
+<div style="display: none;">
 		<div class="postarea">
 			<form name="postform" id="postform" action="$form_action" method="post" enctype="multipart/form-data">
 			$max_file_size_input_html
 			$form_extra
-			<table class="postform">
+			<table class="postform-table reply">
 				<tbody>
 					$input_extra
 EOF;
@@ -345,7 +351,7 @@ EOF;
 EOF;
 	}
 	if ($staff_post || !in_array('subject', $hide_fields)) {
-		$txt_subject = __('Subject');
+		$txt_subject = __('Title');
 		$output .= <<<EOF
 					<tr>
 						<td class="postblock">
@@ -408,18 +414,16 @@ EOF;
 						<td colspan="2" class="rules">
 							$rules_extra
 							<ul>
-								$reqmod_html
-								$filetypes_html
-								$max_file_size_rules_html
-								$thumbnails_html
-								$unique_posts_html
+							
 							</ul>
 						</td>
 					</tr>
 				</tbody>
 			</table>
 			</form>
-		</div>
+			
+		</div></div>
+		<br><br><br><br><br>
 EOF;
 
 	return $output;
@@ -716,16 +720,15 @@ EOF;
 
 	$body = <<<EOF
 	<body>
-		<div class="adminbar">
-			$cataloglink
-			$managelink
-			$select_style
-		</div>
+	$select_style
+	<div class="adminbar">
+	[<a href="../" style="text-decoration: underline;"> Home </a>]
+	</div>
 		<div class="logo">
 EOF;
 	$body .= TINYIB_LOGO . TINYIB_BOARDDESC . <<<EOF
 		</div>
-		<hr width="90%">
+		
 		$postingmode
 		$postform
 		$js

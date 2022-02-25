@@ -149,7 +149,7 @@ function nameBlock($name, $tripcode, $email, $timestamp, $capcode) {
 		$output = '<a href="mailto:' . $email . '">' . $output . '</a>';
 	}
 
-	return $output . $capcode . ' ' . strftime(TINYIB_DATEFMT, $timestamp);
+	return $output . $capcode . ' ' . date(TINYIB_DATEFMT, $timestamp);
 }
 
 function writePage($filename, $contents) {
